@@ -1,14 +1,24 @@
 <p>
   test works!
 </p>
-  <span>
-    {{oracle}}
-  </span>
-<button>
-  go
-</button>
-<!-- <div [innerHTML]= "h" ></div> -->
+
+<span>
+  {{oracle}}
+</span>
 <div>
   1+1={{1+1}}
 </div>
 
+<div [innerHTML]="content"></div>
+
+
+<div [id]="id" [title]="title">2</div>
+
+<ul>
+  <li *ngFor="let item of arrs">
+    {{item}}
+  </li>
+  <li *ngFor="let x of list">
+    {{ x.name + ', ' + x.country}}
+  </li>
+</ul>
