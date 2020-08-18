@@ -15,10 +15,31 @@
 <div [id]="id" [title]="title">2</div>
 
 <ul>
+  循环普通数组
   <li *ngFor="let item of arrs">
     {{item}}
   </li>
+  循环二维数组
   <li *ngFor="let x of list">
     {{ x.name + ', ' + x.country}}
   </li>
+  设定key值的循环
+  <li *ngFor="let item of arrs;let i = index">
+    {{item}}  --{{i}}
+  </li>
+  <li *ngIf="list.length>2">
+    这是ngIF判断是否显示。
+  </li>
 </ul>
+<div ng-switch="num">
+  <div ng-switch-when="0">00</div>
+  <div ng-switch-when="1">11</div>
+  <div ng-switch-when="2">22</div>
+  <div ng-switch-default>333</div>
+</div>
+<span>事件绑定</span>
+<button class="btn" (click)="getData()"></button>
+<span>表单事件</span>
+<input type="text" (keyup)="keyUpFn($event)"/>
+<span>双向绑定</span>
+<!-- todo -->

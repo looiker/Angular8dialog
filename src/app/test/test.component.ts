@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { AppComponent } from '../app.component';
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
@@ -16,7 +17,21 @@ export class TestComponent implements OnInit {
           {name: 'aplha', country: 'china'},
           {name: 'bate' , country: 'america'}, ];
   arrs = [1, 2 , 3, 4, 5];
+  num = 1;
+  msg = '';
   // tslint:disable-next-line: typedef
+  getData(){
+    alert(1);
+  }
+  // setData(){
+  //   this.msg('这是设置的值');
+  // }
+  keyUpFn(e)
+  {
+    console.log(e);
+  }
+ 
+
   ngOnInit() {// 生命周期钩子函数
 
   }
