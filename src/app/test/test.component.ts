@@ -8,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   oracle = 'wind';
-
   constructor() { }
-
+  
   // tslint:disable-next-line: typedef
   ngOnInit() {
+
+
   }
 
 }
