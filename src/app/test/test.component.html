@@ -41,5 +41,17 @@
 <button class="btn" (click)="getData()"></button>
 <span>表单事件</span>
 <input type="text" (keyup)="keyUpFn($event)"/>
-<span>双向绑定</span>
-<!-- todo -->
+
+<div [ngClass]="{'red': true, 'blue' : false}">
+  这是一个div
+</div>
+<div [ngClass]="{'red': flag, 'blue': !flag}"></div>
+<ul>
+  <li *ngFor="let item of arr, let i = index">
+    <span [ngClass]="{'red': i==0}">
+      {{item}}
+    </span>
+  </li>
+</ul>
+<div [ngStyle]="{'background-color':'green'}">1</div>  
+<p>{{today | date:'yyyy-MM-dd HH:mm:ss'}}</p>

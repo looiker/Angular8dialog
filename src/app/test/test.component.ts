@@ -19,6 +19,9 @@ export class TestComponent implements OnInit {
   arrs = [1, 2 , 3, 4, 5];
   num = 1;
   msg = '';
+  flag = false;
+  arr = [1, 2, 3, 4, 5];
+   today = new Date();
   // tslint:disable-next-line: typedef
   getData(){
     alert(1);
